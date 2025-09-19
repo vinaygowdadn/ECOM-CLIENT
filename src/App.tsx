@@ -4,7 +4,7 @@ import Register from "./pages/auth/Register"
 import AdminProducts from "./pages/admin/AdminProducts"
 import AdminUsers from "./pages/admin/AdminUsers"
 import AdminOrders from "./pages/admin/AdminOrders"
-import UserProduct from "./pages/user/UserProduct"
+import UserProducts from "./pages/user/UserProducts"
 import AdminLayout from "./layouts/AdminLayout"
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
                 </Route>
 
                 {/* user */}
-                <Route path="/user/products" element={<UserProduct />} />
+                <Route path="/user/products" element={<UserProducts />} />
             </Routes>
         </div>
     )

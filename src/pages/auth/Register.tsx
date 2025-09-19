@@ -25,7 +25,7 @@ const Register = () => {
                                 <Input
                                     id="name"
                                     type="text"
-                                    placeholder="vinay"
+                                    placeholder="mohan"
                                     required
                                 />
                             </div>
