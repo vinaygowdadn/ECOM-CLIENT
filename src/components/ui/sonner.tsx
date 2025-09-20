@@ -1,11 +1,13 @@
+// src/components/ui/sonner.tsx
 import { useTheme } from "next-themes"
-import { Toaster as Sonner } from "sonner"
+import { Toaster as SonnerToaster } from "sonner"   // 👈 renamed here
 import type { ToasterProps } from "sonner"
-const Toaster = ({ ...props }: ToasterProps) => {
+
+const CustomToaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme()
 
   return (
-    <Sonner
+    <SonnerToaster
       theme={theme as ToasterProps["theme"]}
       className="toaster group"
       style={
@@ -20,4 +22,4 @@ const Toaster = ({ ...props }: ToasterProps) => {
   )
 }
 
-export { Toaster }
+export { CustomToaster as Toaster }   // 👈 export properly
